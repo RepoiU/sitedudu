@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;900&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+body {
+  padding: 1rem;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  color: #1F2020;
+  background-color: gray;
+  margin-top: 15%;
+}
+#container {
+  margin: auto;
+  min-height: calc(100vh - 2rem);
+  display: grid;
+  grid-template-rows: auto 1fr;
+  padding: 1rem;
+  box-shadow: 0px 0px 10px 5px #0002;
+  background: #F9F6EF;
+  border-radius: 5px;
+  border: 2px solid #0003;
+}
+
+p {
+  text-align: center;
+  font-size: clamp(3rem, 10vw + 2rem, 8rem);
+  font-weight: 900;
+  padding: 0;
+  line-height: .1;
+  text-shadow: 1px 1px 2px white, 0 0 .3em #5EB0E530, 0 0 0.1em #5EB0E590;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  
+}
+#botao_direito{
+  float: right;
+  border: 1px solid rgb(0, 0, 0);
+  font-size: 250px;
+  font-weight: 100;
+  text-shadow: -1px -1px 0px #6669, 1px 1px 0px #fff9;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px #0005;
+  transition: all 200ms ease;
+  color: #ffffff;
+  cursor: pointer;
+  width: 48%;
+  margin-left: 2%;
+  background-color: red;
+  
+}
+#botao_esquerdo{
+    float: left;
+    border: 1px solid rgb(0, 0, 0);
+    font-size: 250px;
+    font-weight: 100;
+    text-shadow: -1px -1px 0px #6669, 1px 1px 0px #fff9;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #0005;
+    transition: all 200ms ease;
+    color: #ffffff;
+    cursor: pointer;
+    width: 48%;
+    margin-right: 2%;
+    background-color: greenyellow;
+}
+button:focus {
+  box-shadow: 2px 2px 5px #0009;
+}
+button:active {
+  transform: translate(2px, 2px);
+  box-shadow: 0px 0px 5px #0009;
+}
