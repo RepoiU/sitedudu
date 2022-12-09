@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Mae do Dudu</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" type="text/css" media="screen" href="src/main.css" />
+        <script src="main.js"></script>
+    </head>
+    <body>
+       <div><button id="botao_esquerdo" onclick="sim()">SIM</button></div> 
+       <div><button id="botao_direito" onclick="nao()">NÃO</button></div>
+        <script>
+            function sim() {
+                var audio = new Audio();
+                audio.src = "sim.mp3";
+                audio.play();
+            }
+            function nao() {
+                var audio = new Audio();
+                audio.src = "nao.mp3";
+                audio.play();
+            }
+        </script>
+    </body>
+</html>
